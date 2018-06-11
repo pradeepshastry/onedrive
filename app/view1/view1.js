@@ -7,7 +7,7 @@ angular.module('myApp.view1', ['ngRoute'])
             clientId: "54c44c3c-7426-4e7e-85f9-113107cd22a0",
             action: "download",
             advanced: {
-                redirectUri: "http://localhost:8000/app/index.html#/view1"
+                redirectUri: "https://pradeepshastry.github.io/onedrive/app/index.html"
             },
             success: function(files) {
                 console.log('Success Pradeep');
