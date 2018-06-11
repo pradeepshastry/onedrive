@@ -9,7 +9,10 @@ angular.module('myApp.view1', ['ngRoute'])
             advanced: {
                 redirectUri: "http://localhost:8000/app/index.html#/view2"
             },
-            success: function(files) { /* success handler */ },
+            success: function(files) {
+                console.log('Success Pradeep');
+                console.log(files)
+            },
             cancel: function() { /* cancel handler */ },
             error: function(e) { /* error handler */ }
         }
