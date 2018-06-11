@@ -17,7 +17,5 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
       templateUrl: 'view2/view2.html',
       controller: 'View2Ctrl'
   })
-  .when('/view3', {
-  })
   .otherwise({redirectTo: '/view1'});
 }]);
