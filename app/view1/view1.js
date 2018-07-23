@@ -8,7 +8,7 @@ angular.module('myApp.view1', ['ngRoute'])
             clientId: "54c44c3c-7426-4e7e-85f9-113107cd22a0",
             action: "share",
             advanced: {
-                redirectUri: "https://pradeepshastry.github.io/onedrive/app/index.html"
+                redirectUri: "https://pradeepshastry.github.io/onedrive/app/index.html",
                 // redirectUri: "http://localhost:4000/app",
                 createLinkParameters: { type: "edit", share: "organization" },
             },
