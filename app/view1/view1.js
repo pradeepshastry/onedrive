@@ -10,7 +10,7 @@ angular.module('myApp.view1', ['ngRoute'])
             advanced: {
                 redirectUri: "https://pradeepshastry.github.io/onedrive/app/index.html",
                 // redirectUri: "http://localhost:4000/app",
-                createLinkParameters: { type: "edit", share: "anonymous" },
+                createLinkParameters: { type: "edit", share: "organizational" },
             },
             success: function(files) {
                 console.log('Success Pradeep');
