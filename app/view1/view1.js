@@ -19,7 +19,11 @@ angular.module('myApp.view1', ['ngRoute'])
                 $scope.$apply();
             },
             cancel: function() { /* cancel handler */ },
-            error: function(e) { /* error handler */ }
+            error: function(e) {
+                console.log('errored on pradeep-',e);
+                $scope.errMessage = 'OneDrive upload was not successful. ' + e.message;
+                $scope.$apply();
+            }
         }
         OneDrive.open(odOptions);
     }

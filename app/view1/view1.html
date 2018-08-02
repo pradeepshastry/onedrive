@@ -2,8 +2,11 @@
     <div style="padding: 10px;">
         <div>Pradeep's POC using v7.0 SDK - Org sharing</div>
         <button style="margin-top: 30px" ng-click="launchOneDrivePicker()">Open from OneDrive</button><br>
-        <div ng-if="response" style="margin-top: 30px">Response from OneDrive
+        <div ng-if="response" style="margin-top: 30px; color: forestgreen;">File upload successful. Response from OneDrive
             <pre style="margin-top: 20px">{{ response | json }}</pre>
+        </div>
+        <div ng-if="errMessage" style="margin-top: 20px; color: orangered;">
+            {{errMessage}}
         </div>
     </div>
 </div>
