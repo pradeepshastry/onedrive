@@ -13,6 +13,7 @@ angular.module('myApp.view1', ['ngRoute'])
                 createLinkParameters: { type: "edit", scope: "organization" },
             },
             success: function(files) {
+                $scope.hasError = false;
                 console.log('Success Pradeep');
                 $scope.response = files;
                 console.log(files)
@@ -21,6 +22,7 @@ angular.module('myApp.view1', ['ngRoute'])
             cancel: function() { /* cancel handler */ },
             error: function(e) {
                 console.log('errored on pradeep-',e);
+                $scope.hasError = true;
                 $scope.errMessage = 'OneDrive upload was not successful. ' + e.message;
                 $scope.$apply();
             }
